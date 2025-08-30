@@ -1,0 +1,2 @@
+# lint-config
+OXC
