@@ -1,2 +1,5 @@
 # lint-config
-OXC
+
+OXC linter profile.
+
+https://oxc.rs/

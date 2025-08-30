@@ -1,0 +1,52 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "react-hooks", "react-perf", "typescript", "oxc"], // Add nextjs if nextjs is used.
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "style": "warn",
+    "perf": "warn"
+  },
+  "ignorePatterns": [
+    "build",
+    "node_modules",
+    "public",
+    "**/CHANGELOG.md",
+    "**/README.md"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "react/jsx-no-useless-fragment": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-nested-ternary": "off",
+    "react/react-in-jsx-scope": "off", // Since React v17 this is solved automatically.
+    "jsx-boolean-value": "off",
+    "prefer-destructuring": "off",
+    "exhaustive-deps": "off",
+    "no-return-assign": "off",
+    "init-declarations": "off",
+    "no-unneeded-ternary": "off",
+    "curly": "warn",
+    "no-unsafe-optional-chaining": "off",
+    "id-length": "off",
+    "sort-keys": "off",
+    "max-params": "off",
+    "arrow-body-style": "off",
+    "new-cap": "off",
+    "no-ternary": "off",
+    "func-style": "off",
+    "sort-imports": "off",
+    "prefer-template": "off",
+    "self-closing-comp": "off",
+    "no-magic-numbers": "off",
+    "typescript/consistent-type-definitions": "off"
+  }
+}
